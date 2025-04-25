@@ -1,4 +1,4 @@
-# pylint: skip-file
+# pylint: disable-all
 
 def count_char_occurrences(text):
     from collections import defaultdict
@@ -7,6 +7,7 @@ def count_char_occurrences(text):
         if char.isalpha():
             counts[char] += 1
     return dict(counts)
+
 
 def merge_dicts(dict1, dict2, conflict_resolver):
     merged = dict1.copy()
@@ -17,11 +18,13 @@ def merge_dicts(dict1, dict2, conflict_resolver):
             merged[key] = value
     return merged
 
+
 def invert_dictionary(original_dict):
     inverted = {}
     for key, value in original_dict.items():
         inverted.setdefault(value, []).append(key)
     return inverted
+
 
 def dict_to_table(data_dict, columns):
     if not data_dict or not columns:
@@ -52,6 +55,7 @@ def dict_to_table(data_dict, columns):
     table += separator
     
     return table
+
 
 def deep_update(base_dict, update_dict):
     result = base_dict.copy()

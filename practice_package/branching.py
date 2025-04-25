@@ -1,6 +1,7 @@
-# pylint: skip-file
+# pylint: disable-all
 
 is_weekend = lambda day: day in {6, 7}
+
 
 def get_discount(amount):
     return (
@@ -8,6 +9,7 @@ def get_discount(amount):
         0.05 * amount if amount >= 1000 else
         0
     )
+
 
 def describe_number(n):
     parity = "четное" if n % 2 == 0 else "нечетное"
@@ -19,6 +21,7 @@ def describe_number(n):
     }
     return f"{parity} {digit_words[digits]} число"
 
+
 def convert_to_meters(unitNumber, lengthInUnits):
     conversions = {
         1: 0.1,
@@ -28,6 +31,7 @@ def convert_to_meters(unitNumber, lengthInUnits):
         5: 0.01
     }
     return lengthInUnits * conversions.get(unitNumber, 0)
+
 
 def describe_age(age):
     tens = {

@@ -11,5 +11,6 @@ def calculate_rect_area(x1, y1, x2, y2):
     height = abs(y1 - y2)
     return width * height
 
+
 def round_to_multiple(number, multiple):
     return multiple * round(number / multiple)

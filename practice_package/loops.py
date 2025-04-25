@@ -1,4 +1,4 @@
-# pylint: skip-file
+# pylint: disable-all
 
 def sum_even_digits(number):
     total = 0
@@ -6,6 +6,7 @@ def sum_even_digits(number):
         if int(digit) % 2 == 0:
             total += int(digit)
     return total
+
 
 def count_vowel_triplets(text):
     vowels = {'a', 'e', 'i', 'o', 'u', 'y'}
@@ -20,6 +21,7 @@ def count_vowel_triplets(text):
             consecutive = 0
     return count
 
+
 def find_fibonacci_index(number):
     a, b = 1, 1
     index = 1
@@ -27,6 +29,7 @@ def find_fibonacci_index(number):
         a, b = b, a + b
         index += 1
     return index if b == number else -1
+
 
 def remove_duplicates(string):
     if not string:
