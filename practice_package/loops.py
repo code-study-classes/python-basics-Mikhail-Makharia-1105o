@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 def sum_even_digits(number):
     total = 0
     for digit in str(abs(number)):

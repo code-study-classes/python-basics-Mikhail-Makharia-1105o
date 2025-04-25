@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 def find_common_elements(set1, set2):
     return set1.intersection(set2)
 

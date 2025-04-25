@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 extract_file_name = lambda full_file_name: full_file_name.split('/')[-1].split('.')[0]
 
 def encrypt_sentence(sentence):

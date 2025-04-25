@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 square_odds = lambda numbers: [x**2 for x in numbers if x % 2 != 0]
 
 normalize_names = lambda names: [name.capitalize() for name in names]

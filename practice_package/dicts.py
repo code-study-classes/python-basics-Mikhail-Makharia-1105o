@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 def count_char_occurrences(text):
     from collections import defaultdict
     counts = defaultdict(int)

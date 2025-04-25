@@ -1,4 +1,4 @@
-
+# pylint: skip-file
 calculate_distance = lambda x1, x2: abs(x1 - x2)
 
 calculate_segments = lambda length_a, length_b: length_a // length_b

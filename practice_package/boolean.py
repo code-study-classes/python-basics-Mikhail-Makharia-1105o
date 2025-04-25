@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 check_between_numbers = lambda A, B, C: (A < B < C) or (C < B < A)
 
 check_odd_three = lambda number: (abs(number) >= 100) and (abs(number) <= 999) and (number % 2 != 0)

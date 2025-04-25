@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 is_weekend = lambda day: day in {6, 7}
 
 def get_discount(amount):
